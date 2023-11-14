@@ -1,0 +1,83 @@
+Scenarios:-
+
+login:
+تسجيل دخول بايميل غير موجود            => 'User not found'
+ايميل لم يتم تاكيده                     => 'this account not verified'
+مدخلات ناقصة                             => 'missing input'
+الايميل او كلمة المرور خطأ              => 'email or password wrong'
+تسجيل الدخول بنجاح    => 'user login successfully'
+
+
+Logout :
+مدخلات ناقصة                    => 'missing input'
+تسجيل الخروج  => 'user logout successfully'
+
+
+Register :
+مدخلات ناقصة                    => 'missing input'
+تم انشاء الحساب لكن بانتظار تاكيد الحساب => 'Check your email, we have sent you a verification code'
+
+
+verificationemail:
+مدخلات ناقصة                    => 'missing input'
+الكود خطا او منتهي الصلاحية => 'wrong code or expired code'
+الايميل خطا او المستخدم غير موجود => 'User not found or wrong email'
+الكود المدخل صحيح => 'User register successfully'
+
+
+Resendemail:
+اعادة ارسال كود الايميل بعد تاكيد الحساب => 'your email is verified'
+اعادة ارسال كود الايميل مرات عديدة => 'you send many request , please try later'
+اعادة ارسال  كود قبل ان يتم ارسال كود من البداية => 'wrong move'
+مدخلات ناقصة                    => 'missing input'
+اعادة ارسال كود بشكل صحيح => 'Check your email, we have sent you a verification code'
+الايميل خطا او المستخدم غير موجود => 'User not found or wrong email'
+
+
+
+Books:-
+
+books:
+طلب الكتب بشكل صحيح  => 'you have all books details'
+
+bookpages:
+طلب كتاب غير موجود => 'this book does not exist'
+طلب صحيح => 'you will get 5 images'
+
+
+Categories:-
+
+categories;
+طلب كل الاقسام => 'you have all categories details'
+
+category:
+طلب قسم => 'you have one category'
+
+Packages:-
+
+Packages;
+طلب كل الباقات => 'you have all packages',
+
+طلب باقة واحدة  => 'you have one package',
+
+
+resetpassword:-
+
+resetpassword:
+مدخلات ناقصة                    => 'missing input'
+ارسال عدد كبير من الطلبات => 'you send many request , please try later'
+طلب resetpassword مرتين => 'we already send a code to your email'
+طلب ارسال كود بشكل صحيح => 'Check your email, we have sent you a verification code'
+مستخدم غير موجود او ايميل خطأ => 'User not found or wrong email'
+
+verificationpassword:
+مدخلات ناقصة                    => 'missing input'
+كود خاطئ او منتهلى الصلاحية => 'wrong code or expired code'
+كود صحيح => 'you can change your password now'
+مستخدم غير موجود او ايميل خطأ => 'User not found or wrong email'
+
+
+createnewpassword:
+مدخلات ناقصة                    => 'missing input'
+طلب تغيير كلمة المرور دون عمليات التحقق => 'wrong move'
+تم تغيير كلمة المرور => 'password changed successfully'

@@ -1,0 +1,254 @@
+# Login
+Post http://127.0.0.1:8000/api/login
+Content-Type: application/json
+Accept: application/json
+api_key: 12345
+
+{
+    "email" : "tarekattar2000@yahoo.com",
+    "password" : "password"
+}
+
+##########
+# Verification Login Email
+Post http://127.0.0.1:8000/api/verificationloginemail
+Content-Type: application/json
+Accept: : application/json
+api-key: 12345
+
+{
+    "verificationcode":"429454",
+    "email":"tarekattar2000@yahoo.com"
+}
+
+##########
+# Logout
+Post http://127.0.0.1:8000/api/logout
+Content-Type: application/json
+Accept: : application/json
+Authorization: Bearer 2|DXvYrEWRTXo1ADGlIrztfNuKLKdZNaHqy7P8392ic277099a
+api_key: 12345
+
+###########
+# Register
+Post http://127.0.0.1:8000/api/register
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+{
+    "name":"tareq",
+    "email":"tarekattar2000@yahoo.com",
+    "job": "محامي",
+    "password":"password",
+    "confirm_password":"password"
+}
+
+##########
+# Verification Email
+Post http://127.0.0.1:8000/api/verificationemail
+Content-Type: application/json
+Accept: : application/json
+api-key: 12345
+
+{
+    "verificationcode":"251454",
+    "email":"tarekattar2000@yahoo.com"
+}
+
+##########
+# Resend Verification Email
+Post http://127.0.0.1:8000/api/resendemail
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+{
+    "email":"tarekattar2000@yahoo.com"
+}
+
+
+##########################################################################
+
+# Reset Password
+Post http://127.0.0.1:8000/api/resetpassword
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+{
+    "email":"tarekattar2000@yahoo.com"
+}
+
+
+
+##########
+# Verification Password
+Post http://127.0.0.1:8000/api/verificationpassword
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+{
+    "verificationcode":428202,
+    "email":"tarekattar2000@yahoo.com"
+}
+
+###########
+# Create New Password
+Post http://127.0.0.1:8000/api/createnewpassword
+Content-Type: application/json
+api_key: 12345
+
+{
+    "email":"tarekattar2000@yahoo.com",
+    "password":"password23",
+    "confirm_password":"password23"
+}
+
+##########################################################################
+
+
+###########
+# Email
+Get http://127.0.0.1:8000/testEmail
+Accept: : application/json
+api_key: u2NusnoSzLBYIrTeXp
+
+###########
+# Test
+Get http://127.0.0.1:8000/test
+Accept: : application/json
+api_key: u2NusnoSzLBYIrTeXp
+
+################################################################################
+
+##########
+# Categories
+GET http://127.0.0.1:8000/api/categories
+Content-Type: application/json
+Accept: : application/json
+api-key: 12345
+
+{
+}
+
+###########
+# One Category
+Get http://127.0.0.1:8000/api/category/2
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+
+
+
+###########
+# Main Category with subcategories with his books
+Get http://127.0.0.1:8000/api/mainCategory/1
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+
+
+
+
+###########
+# Packages
+Get http://127.0.0.1:8000/api/packages
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+###########
+# One Package
+Get http://127.0.0.1:8000/api/package/1
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+###########
+# Books
+Get http://127.0.0.1:8000/api/books
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+
+###########
+# Book pages
+Get http://127.0.0.1:8000/api/book/10
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+
+###########
+# Send form
+Post  http://127.0.0.1:8000/api/sendForm
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+{
+    "email": "tarekattar2000@yahoo.com",
+    "firstName" : "طارق",
+    "lastName" : "طارق",
+    "subject" : "استفسار عن الكتب ",
+    "purpos" : "استفسار",
+    "message" : "أريد كتب عن مرافعات حقيقية لقضايا معقدة"
+}
+
+###########
+# information platform
+Get http://127.0.0.1:8000/api/informations
+Content-Type: application/json
+Accept: : application/json
+api_key: 12345
+
+
+###########
+# user profile
+Get http://127.0.0.1:8000/api/profile/48
+Content-Type: application/json
+Accept: : application/json
+Authorization: Bearer 5|sUUiZIGkitnEWHokV7cNDBGNK11u98LmBMUBsOKrc09f1a35
+api_key: 12345
+
+###########
+# edit user profile
+Post http://127.0.0.1:8000/api/editprofile/48
+Content-Type: application/json
+Accept: : application/json
+Authorization: Bearer 5|sUUiZIGkitnEWHokV7cNDBGNK11u98LmBMUBsOKrc09f1a35
+api_key: 12345
+
+{
+    "name" : "tareq",
+    "job" : "lowyer",
+    "profile":{
+        "name_en":"shusmo",
+        "gender":"male",
+        "birthdate":"1999-04-10",
+        "whatsapp":"+972568292177",
+        "nationality":"palestinian",
+        "residence_country":"palestine"
+    },
+    "language":{
+        "0":{
+            "name":"java1",
+            "level":"بطلاقة"
+        },
+        "1":{
+            "name":"java2",
+            "level":"بطلاقة"
+        }
+    }
+}
+
+
+
+
+
+
